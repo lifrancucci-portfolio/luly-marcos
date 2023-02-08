@@ -77,9 +77,13 @@ button {
   text-align: center;
   line-height: 2;
 }
-.hero > button {
+.recap > p {
+  margin: 1rem 0;
+}
+.hero button {
   background-color: var(--clr-light);
   color: var(--clr-dark);
+  font-weight: 600;
 }
 .when-where {
   height: auto;
@@ -160,4 +164,26 @@ button {
 }
 .carousel__button i {
   font-size: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 72px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .info {
+    font-size: 32px;
+  }
+  button {
+    font-size: 24px;
+  }
+  .hero > p,
+  .recap > p,
+  .title,
+  .gifts > .body-text {
+    font-size: 19px;
+  }
 }
