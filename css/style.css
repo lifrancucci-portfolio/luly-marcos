@@ -1,0 +1,163 @@
+:root {
+  --clr-dark: #03061F;
+  --clr-light: #FFFFFF;
+
+  --font-main: 'Antic Didone', serif;
+  --font-secondary: 'Jost', sans-serif;
+}
+body {
+  font-family: var(--font-secondary);
+  letter-spacing: .25rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, .info, .title {
+  text-transform: uppercase;
+  text-align: center;
+}
+h1, h2, .info {
+  font-family: var(--font-main);
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+h1 > span,
+h2 > span {
+  font-size: .7em;
+}
+.title {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: .5rem 1rem;
+}
+.info {
+  font-size: 24px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+button {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  letter-spacing: .3rem;
+  padding: .5rem 1rem;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+  margin: 1.5rem 0 3rem;
+}
+.hero {
+  color: var(--clr-light);
+  background-image: url("../assets/invitation-bg.jpeg");
+  background-color: var(--clr-light);
+  background-size: contain;
+  background-position: center;
+}
+.hero > * {
+  margin: 1rem 0;
+}
+.hero > p,
+.recap > p {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2;
+}
+.hero > button {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+.when-where {
+  height: auto;
+}
+.when-where .title {
+  font-weight: lighter;
+}
+.when, .where {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+} 
+.gifts > .body-text {
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: normal;
+  margin-bottom: 3rem;
+  padding: 1rem 3rem;
+}
+.still-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.still-image > img {
+  width: 80%;
+}
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  width: 75vw;
+  height: 75vw;
+  margin: 3rem auto;
+}
+.carousel__track-container {
+  background: var(--clr-light);
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+.carousel__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.carousel__image {
+  width: 100%;
+  object-fit: contain;
+}
+.carousel__button {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--clr-dark);
+  border: 0;
+  cursor: pointer;
+}
+.carousel__button--left {
+  left: -40px;
+}
+.carousel__button--right {
+  right: -45px;
+}
+.carousel__button i {
+  font-size: 1.5rem;
+}
