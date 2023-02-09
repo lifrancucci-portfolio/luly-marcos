@@ -167,6 +167,7 @@ button {
 }
 
 /* MEDIA QUERIES */
+/* Tablet Portrait Up */
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 72px;
@@ -185,5 +186,23 @@ button {
   .title,
   .gifts > .body-text {
     font-size: 19px;
+  }
+}
+/* Tablet Landscape Up */
+@media screen and (min-width: 900px) {
+  .carousel {
+    width: 75vh;
+    height: 75vh;
+    margin: 7rem auto;
+  }
+  .gifts {
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+  .gifts > .body-text {
+    padding: 1rem 7rem 3rem;
+  }
+  .recap {
+    justify-content: flex-start;
   }
 }
