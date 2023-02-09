@@ -188,7 +188,7 @@ button {
     font-size: 19px;
   }
 }
-/* Tablet Landscape Up */
+/* Desktop */
 @media screen and (min-width: 900px) {
   .hero {
     background-image: none;
@@ -240,7 +240,8 @@ button {
   .recap {
     flex-direction: row;
     align-items: flex-start;
-    /* justify-content: space-around; */
+    height: fit-content;
+    margin: 3rem 0;
   }
   .still-image {
     width: 50%;
