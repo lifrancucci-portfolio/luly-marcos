@@ -70,14 +70,14 @@ button {
   margin: 1rem 0;
 }
 .hero > p,
-.recap > p {
+.recap p {
   font-family: var(--font-secondary);
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
   line-height: 2;
 }
-.recap > p {
+.recap p {
   margin: 1rem 0;
 }
 .hero button {
@@ -182,7 +182,7 @@ button {
     font-size: 24px;
   }
   .hero > p,
-  .recap > p,
+  .recap p,
   .title,
   .gifts > .body-text {
     font-size: 19px;
@@ -190,19 +190,77 @@ button {
 }
 /* Tablet Landscape Up */
 @media screen and (min-width: 900px) {
+  .hero {
+    background-image: none;
+    color: var(--clr-dark);
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  button {
+    font-size: 19px;
+  }
+  .hero button {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    font-weight: normal;
+  }
+  .when-where {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .info {
+    font-size: 24px;
+  }
   .carousel {
-    width: 75vh;
-    height: 75vh;
-    margin: 7rem auto;
+    width: 420px;
+    height: 420px;
+    margin: 0 3rem;
+  }
+  .carousel__button--left {
+    left: -50px;
+  }
+  .carousel__button--right {
+    right: -55px;
+  }
+  .when-where__text {
+    padding: 3rem 3rem 0 0;
   }
   .gifts {
-    justify-content: flex-start;
-    padding-top: 5rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
   }
   .gifts > .body-text {
-    padding: 1rem 7rem 3rem;
+    width: 420px;
   }
   .recap {
-    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+  }
+  .still-image {
+    width: 50%;
+  }
+  .still-image > img {
+    align-self: flex-start;
+  }
+  .recap__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+  .recap h2 {
+    font-size: 32px;
+  }
+  .recap p {
+    font-size: 14px;
+  }
+  .recap button {
+    margin-bottom: 10rem;
   }
 }
